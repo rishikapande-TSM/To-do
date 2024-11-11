@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of your webpage">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+     <header>
+    <h1>To do list</h1>
+    </header>
+    <div class="input-section" id="taskform">
+        <input type="text" id="taskTitle" placeholder="Task Title" required>
+        <input type="text" id="taskDescription" placeholder="Task Description">
+        <input type="date" id="taskDueDate">
+        <select id="taskPriority" placeholder="Task Priority">
+            <option value="" disabled selected>Select Priority</option>
+            <option value="low">Low Priority</option>
+            <option value="medium">Medium Priority</option>
+            <option value="high">High Priority</option>
+        </select>
+        <button id="addTaskButton">Add Task</button>
+
+    </div>
+
+    <div class="sections">
+    <div class="search-section">
+        <input type="text" id="tasksearch" placeholder="Search tasks">
+    </div>
+    
+    <div class="sort-section">
+        <select id="sort-tasks" placeholder="Sort tasks">
+          <option value="" disabled selected>Sort By:</option>
+          <option value="title">Title (A-Z)</option>
+          <option value="due-date">Due Date</option>
+          <option value="priority">Priority (High to Low)</option>
+        </select>
+      </div>
+    </div>
+
+    <table class="task-table">
+      <thead>
+        <tr>
+            <th>Status</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Due date</th>
+            <th>Priority</th>
+            <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
